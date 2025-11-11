@@ -13,9 +13,6 @@
   <h1>Contact</h1>
   <p>This is the contact page. dont contact us. but, if you have to, the form is below. ugh</p>
 
-	<button type="button" onclick="validate()">Show answer</button>
-
-
   <form>
     name: <input type="text" name="name"><br><br>
     email: <input type="text" name="email"><br><br>
@@ -24,9 +21,22 @@
     <input type="reset" value="Reset">
   </form>
   
+<script>
+		function validate() {
+		    var x = document.forms["question"]["answer"].value;
+		    if (x == "") {
+		        document.getElementById("box").style.color="red"; 
+		      }
+		}
+    <button type="button" onclick="validate()">Show answer</button>
+</script>
+
+
   <p>
     <a href="index.html">Home</a> |
     <a href="about.html">About</a>
   </p>
+
+
 </body>
 </html>
