@@ -22,13 +22,14 @@
   </form>
   
 <script>
+  <button type="button" onclick="validate()">Show answer</button>
 		function validate() {
 		    var x = document.forms["question"]["answer"].value;
 		    if (x == "") {
 		        document.getElementById("box").style.color="red"; 
 		      }
 		}
-    <button type="button" onclick="validate()">Show answer</button>
+    
 </script>
 
 
